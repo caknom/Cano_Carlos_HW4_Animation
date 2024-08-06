@@ -1,0 +1,174 @@
+* {
+    border: solid 1px;
+}
+
+body {
+    font-family: "Merriweather Sans", sans-serif;
+    font-weight: 350;
+    font-style: normal;
+    background-color: #fcfaf8;
+    color: #585857;
+}
+
+section {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+#hero {
+    height: 2500px;
+}
+
+#hero img {
+    position: absolute;
+    top: 200px;
+}
+
+#hero div {
+    position: absolute;
+    height: 100%;
+    top: 680px;
+    justify-self: center;
+}
+
+#amber-main {
+    margin-top: -100px;
+    height: 40px;
+    justify-self: center;
+}
+
+#light-main {
+    margin-top: -50px;
+    height: 40px;
+    margin-inline: max(30% - 165px);
+}
+
+#dark-main {
+    margin-top: -50px;
+    height: 40px;
+    margin-inline: max(70% - 120px);
+}
+
+#amber-hero-main {
+    z-index: 1;
+    justify-self: center;
+    max-width: 240px;
+}
+
+#light-hero-main {
+    margin-inline: max(30% - 120px);
+    max-width: 240px;
+    margin-top: 16px;
+    transform: rotate(-10deg);
+}
+
+#dark-hero-main {
+    margin-inline: max(70% - 120px);
+    max-width: 240px;
+    margin-top: 16px;
+    transform: rotate(10deg);
+}
+
+#text-main {
+    position: relative;
+    top: 0;
+    overflow: visible;
+}
+
+#text-main #text-hero-main {
+    position: relative;
+    top: 0;
+    font-size: 19px;
+    font-style: italic;
+    font-weight: 300;
+    text-align: center;
+}
+
+#text-hero-main p {
+    white-space: nowrap;
+}
+
+#billysignature-main {
+    margin-inline: max(50% - 80px);
+    margin-top: -90px;
+}
+
+
+/* ---Tablet Library Grid Styles--- */
+
+
+
+@media screen and (min-width: 768px) {
+
+    #hero img {
+        top: 310px;
+    }
+
+    #text-main #text-hero-main {
+        top: 110px;
+        font-size: 22px;
+    }
+
+    #billysignature-main {
+        margin-inline: max(50% - 100px);
+        margin-top: -65px;
+    }
+
+}
+
+/* ---Desktop Library Grid Styles--- */
+
+
+
+@media screen and (min-width: 1200px) {
+
+    #hero img {
+        top: 354px;
+    }
+
+    #amber-main {
+        margin-top: -140px;
+        height: 54px;
+        justify-self: center;
+    }
+    
+    #light-main {
+        margin-top: -70px;
+        height: 54px;
+        margin-inline: max(30% - 225px);
+    }
+    
+    #dark-main {
+        margin-top: -70px;
+        height: 54px;
+        margin-inline: max(70% - 120px);
+    }
+    
+    #amber-hero-main {
+        max-width: 300px;
+    }
+    
+    #light-hero-main {
+        margin-inline: max(30% - 180px);
+        max-width: 300px;
+    }
+    
+    #dark-hero-main {
+        margin-inline: max(70% - 120px);
+        max-width: 300px;
+    }
+
+    #text-main #text-hero-main {
+        top: 260px;
+        font-size: 26px;
+    }
+
+    #billysignature-main {
+        margin-inline: max(50% - 120px);
+        margin-top: 60px;
+    }
+
+}
