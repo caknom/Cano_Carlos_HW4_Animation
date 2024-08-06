@@ -125,6 +125,10 @@ section {
 
 @media screen and (min-width: 1200px) {
 
+    #hero {
+        height: 3000px;
+    }
+
     #hero img {
         top: 354px;
     }
